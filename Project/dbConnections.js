@@ -1,11 +1,14 @@
 var mysql = require('mysql');
+const dotenv = require('dotenv');
+dotenv.config();
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "bro",
-  password: "pagoda",
-  port: 3306
+  host: process.env.HOST,
+  user: 'bro',
+  password: process.env.PASSWORD,
+  port: process.env.PORT
 });
+
 
 con.connect(function(err) {
   if (err) throw err;
