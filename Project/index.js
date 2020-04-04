@@ -12,7 +12,8 @@ let app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mainRouter = require('./routes');
+let mainRouter = require('./routes');
+let db = require('./dbConnections');
 
 app.use(mainRouter);
 
