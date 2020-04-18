@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-(function(){
+(function () {
     'use strict';
 }());
 
@@ -8,19 +8,19 @@ let express = require('express');
 let mainRouter = express.Router();
 
 
-mainRouter.get('/', function(req, res){
+mainRouter.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'views', 'home.html'));
 });
 
-mainRouter.get('/betaversion', function(req, res){
+mainRouter.get('/betaversion', function (req, res) {
     res.sendFile(path.join(__dirname, 'views', 'betaversion.html'));
 });
 
-mainRouter.get('/comments', function(req, res){
+mainRouter.get('/comments', function (req, res) {
     res.sendFile(path.join(__dirname, 'views', 'comments.html'));
 });
 
-mainRouter.get('/feedback', function(req, res){
+mainRouter.get('/feedback', function (req, res) {
     res.sendFile(path.join(__dirname, 'views', 'feedback.html'));
 });
 
