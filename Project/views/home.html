@@ -15,15 +15,15 @@
   </style>
 </head>
 
-<body class="p-3 mb-2 bg-white text-secondary">
+<body class="p-3 mb-2 bg-white text-secondary" ng-app="homeApp">
 
 
   <h1>Tooling Mainpage</h1>
 
-  <div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-dark" id="betaversion">Beta Version</a>
-    <a href="#" class="btn btn-dark" id="comments">Comments</a>
-    <a href="#" class="btn btn-dark" id="feedback">Feedback</a>
+  <div class="btn-group btn-group-justified" ng-controller="homeController">
+    <a href="betaversion" class="btn btn-dark">Beta Version</a>
+    <a href="comments" class="btn btn-dark">Comments</a>
+    <a href="feedback" class="btn btn-dark">Feedback</a>
   </div>
   <br>
   <br>

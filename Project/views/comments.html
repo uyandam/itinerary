@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Comments Page</title>
   <meta charset="utf-8" />
   <!--link rel="stylesheet" href="/cdn/styles/main.css"-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <style type="text/css">
-   body { background: navy !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-</style>
+    body {
+      background: navy !important;
+    }
+
+    /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+  </style>
 </head>
 
-<body class="p-3 mb-2 bg-white text-secondary">
+<body class="p-3 mb-2 bg-white text-secondary" ng-app="commentsApp" ng-controller="commentsCtrl">
 
 
-  <h1>Enter comments go on this page</h1>
-  <button id="submitcomment" class="btn btn-success" type="button">Submit Feedback</button>
+  <h1>Itinerary comments</h1>
 
-<br>
-<br>
+  <br>
+  <form ng-submit="comment()">
+    <div class="form-group">
+      <input id="submitcomment" class="btn btn-success" type="submit" value="Submit Feedback">
+      <input type="text" size="50" placeholder="enter comment" ng-model="commentInput">
+    </div>
+  </form>
 
+
+  <script src="/cdn/scripts/comments.js"></script>
 </body>
+
 </html>

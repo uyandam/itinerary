@@ -16,10 +16,13 @@ document.getElementById('popo').addEventListener('click', function(){
     }
 })
 */
-
+/*
 document.getElementById('betaversion').addEventListener('click', function () {
   window.location.pathname = '/betaversion'
 })
+
+
+
 
 document.getElementById('comments').addEventListener('click', function () {
   window.location.pathname = '/comments'
@@ -28,3 +31,4 @@ document.getElementById('comments').addEventListener('click', function () {
 document.getElementById('feedback').addEventListener('click', function () {
   window.location.pathname = '/feedback'
 })
+*/
